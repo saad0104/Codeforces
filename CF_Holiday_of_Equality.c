@@ -1,4 +1,4 @@
-//Holiday Of Equality
+// Holiday Of Equality
 
 #include <stdio.h>
 int main()
@@ -12,27 +12,24 @@ int main()
 
         scanf("%d", &arr[i]);
     }
-    int max=arr[0];
+    int max = arr[0];
     for (int i = 0; i < n; i++)
     {
-       // printf("%d", arr[i]);
-      if(arr[i]>max)
-      {
-        max=arr[i];
-      }
-
+        // printf("%d", arr[i]);
+        if (arr[i] > max)
+        {
+            max = arr[i];
+        }
     }
-   // printf("max %d\n",max);
-    int sum=0;
+    // printf("max %d\n",max);
+    int sum = 0;
 
-for(int i=0;i<n;i++)
-{
+    for (int i = 0; i < n; i++)
+    {
 
-   sum=sum+(max-arr[i]);
-
-}
-printf("%d\n",sum);
-
+        sum = sum + (max - arr[i]);
+    }
+    printf("%d\n", sum);
 
     return 0;
 }
