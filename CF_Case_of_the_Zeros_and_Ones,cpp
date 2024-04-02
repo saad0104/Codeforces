@@ -1,0 +1,27 @@
+//Case of the Zeros and Ones
+
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    long t;
+    cin >> t;
+    char str[t];
+    long on = 0, zr = 0;
+
+    for (int i = 0; i < t; i++)
+    {
+        cin >> str[i];
+        if (str[i] == '1')
+        {
+            on++;
+        }
+        else if (str[i] == '0')
+        {
+            zr++;
+        }
+    }
+    cout << abs(on - zr) << endl;
+
+    return 0;
+}
